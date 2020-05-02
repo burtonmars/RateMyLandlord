@@ -18,14 +18,3 @@ module.exports = {
     }
 };
 
-// module.exports = {
-//     //GET endpoint
-//     searchListings: (req, response) => {
-//       connection.query(`SELECT * FROM listing WHERE listingBedrooms = 2 AND
-//       listingBathrooms = 1 AND (listingPrice >= 500 AND 
-//       listingPrice <= 2500)`, 
-//       function(error, results, fields) {
-//           response.render('./pages/Listings', { listings: results });
-//       });
-//       }
-//   };

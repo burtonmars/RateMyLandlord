@@ -1,7 +1,6 @@
 const express = require('express');
 var db = require('./db');
 const bodyParser = require('body-parser');
-const { showAll, addUser } = require('./routes/sampleRoute');
 const { addNewUser } = require('./routes/signupRoute');
 const { addListing } = require('./routes/postlistingsRoute');
 const { searchResults, searchResultsProperty } = require('./routes/searchRoute');
@@ -209,16 +208,6 @@ app.get('/superLandlords', (req, res) => {
       })
 
 });
-//***************************************//
-
-
-
-
-
-//**********  TEMPLATE SECTION *********//
-/* import the endpoints */
-app.get('/samplePage', showAll);
-app.post('/samplePage', addUser);
 //***************************************//
 
 
